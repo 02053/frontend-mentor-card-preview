@@ -20,6 +20,7 @@
     --very-dark-blue: #1c232b;
     --dark-gray-blue: #6c7289;
     --white: #ffffff;
+    --bgc-active-btn: #1a4031;
 
     /* vars fonts */
     --fz-paragraph: 14px;
@@ -109,6 +110,11 @@ body {
     border-radius: 1rem;
     font-weight: 700;
     padding: var(--step-0) 0;
+    cursor: pointer;
+}
+
+.content-btn:hover {
+    background-color: var(--bgc-active-btn);
 }
 
 .content-btn > img {

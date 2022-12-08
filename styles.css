@@ -1,0 +1,181 @@
+/* VARS FLUID */
+/* @link https://utopia.fyi/type/calculator?c=320,17,1.2,1500,20,1.333,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+:root {
+    --step--2: clamp(0.7rem, calc(0.75rem + -0.05vw), 0.74rem);
+    --step--1: clamp(0.89rem, calc(0.87rem + 0.07vw), 0.94rem);
+    --step-0: clamp(1.06rem, calc(1.01rem + 0.25vw), 1.25rem);
+    --step-1: clamp(1.28rem, calc(1.17rem + 0.53vw), 1.67rem);
+    --step-2: clamp(1.53rem, calc(1.34rem + 0.94vw), 2.22rem);
+    --step-3: clamp(1.84rem, calc(1.53rem + 1.52vw), 2.96rem);
+    --step-4: clamp(2.2rem, calc(1.73rem + 2.36vw), 3.95rem);
+    --step-5: clamp(2.64rem, calc(1.93rem + 3.55vw), 5.26rem);
+    --step-6: clamp(3.17rem, calc(2.13rem + 5.21vw), 7.01rem);
+}
+
+/* CUSTOM PROPERTIES */
+:root {
+    /* vars colors */
+    --dark-cyan: #3c8067;
+    --cream: #f2ebe3;
+    --very-dark-blue: #1c232b;
+    --dark-gray-blue: #6c7289;
+    --white: #ffffff;
+
+    /* vars fonts */
+    --fz-paragraph: 14px;
+    --font-paragraph: 'Montserrat', sans-serif;
+    --font-title: 'Fraunces', serif;
+}
+
+/* RESET */
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100vw;
+    background-color: var(--cream);
+}
+
+/* CARD */
+
+.card {
+    display: flex;
+    font-family: var(--font-paragraph);
+    font-size: var(--fz-paragraph);
+    height: 600px;
+    max-width: 800px;
+    border-radius: 1rem;
+    background-color: var(--white);
+    justify-content: center;
+}
+
+.card-image {
+    width: 400px;
+}
+
+.card-image > img {
+    border-radius: 1rem 0 0 1rem;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: var(--step-3);
+    color: var(--dark-gray-blue);
+}
+
+.content-category {
+    letter-spacing: var(--step--2);
+}
+
+.content-title {
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-size: var(--step-3);
+    color: var(--very-dark-blue);
+    margin: 0;
+    line-height: 1;
+    padding: var(--step-0) 0;
+}
+
+.content-description {
+    padding-right: var(--step-6);
+    line-height: 1.8;
+}
+
+.content-price {
+    display: flex;
+    align-items: center;
+}
+
+.content-price > strong {
+    color: var(--dark-cyan);
+    font-family: var(--font-title);
+    font-size: var(--step-3);
+    padding-right: var(--step-1);
+}
+
+.content-btn {
+    margin-top: var(--step-2);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: none;
+    color: var(--white);
+    background-color: var(--dark-cyan);
+    border-radius: 1rem;
+    font-weight: 700;
+    padding: var(--step-0) 0;
+}
+
+.content-btn > img {
+    margin-right: var(--step-0);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1025px) {
+    .card {
+        height: 475px;
+        margin: var(--step-2);
+    }
+
+    .card-image {
+        width: 100%;
+    }
+
+    .card-image > img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 756px) {
+    body {
+        overflow-x: hidden;
+        padding: 0;
+    }
+    .card {
+        flex-direction: column;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .card-image {
+        width: 100%;
+        max-width: inherit;
+    }
+
+    .card-image > img {
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    body {
+        padding: 0;
+    }
+
+    .card {
+        flex-direction: column;
+        max-width: 325px;
+        height: auto;
+        margin: 0;
+    }
+
+    .card-image {
+        max-width: inherit;
+    }
+
+    .card-image > img {
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .content-description {
+        padding: 0;
+    }
+}

@@ -1,4 +1,4 @@
-# Frontend Mentor - Product preview card component solution
+# Solucion a Product preview card component - Frontend Mentor
 
 Esta es una solucion del reto [Product preview card component de Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa)
 ## Tabla de contenido
@@ -26,8 +26,8 @@ Los usuarios deben ser capaces de:
 
 ### Enlaces
 
-- Solucion URL: [Add solution URL here](https://github.com/02053/frontend-mentor-card-preview)
-- Sitio en vivo URL: [Add live site URL here](https://your-live-site-url.com)
+- Solucion: [Repositorio de Github](https://github.com/02053/frontend-mentor-card-preview)
+- Sitio en vivo: [Pagina en Github Pages](https://02053.github.io/frontend-mentor-card-preview/)
 
 ## Mi proceso
 

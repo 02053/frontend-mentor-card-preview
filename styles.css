@@ -38,6 +38,7 @@ body {
     margin: 0;
     width: 100vw;
     background-color: var(--cream);
+    position: relative;
 }
 
 /* CARD */
@@ -184,4 +185,10 @@ body {
     .content-description {
         padding: 0;
     }
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    font-family: var(--font-paragraph);
 }
